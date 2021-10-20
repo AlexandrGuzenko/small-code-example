@@ -1,0 +1,44 @@
+@import 'src/styles/constants';
+@import 'src/styles/colors';
+
+.suggestions,
+.empty {
+  position: absolute;
+  margin: 10px;
+  width: calc(100% - 20px);
+  left: 0;
+  top: 32px;
+  z-index: $Z_INDEX_BIG;
+  border-radius: 4px;
+}
+
+.empty {
+  color: $LIGHT_GRAY_FONT_COLOR;
+  padding: 8px;
+  border: 1px solid $BLUE_HOVER_ICON;
+  background-color: white;
+}
+
+.recommended {
+  padding: 8px;
+  border: 1px solid $BLUE_HOVER_ICON;
+  border-top: none;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    border-color: $MAIN_BLUE;
+    background-color: $MAIN_BLUE;
+    color: white;
+  }
+}
+
+.recommended:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top: 1px solid $BLUE_HOVER_ICON;
+}
+
+.recommended:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

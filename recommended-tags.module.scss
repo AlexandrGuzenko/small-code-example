@@ -1,0 +1,26 @@
+@import 'src/styles/extenders';
+
+.wrapper {
+  @extend .flex-c-c;
+}
+
+.input {
+  margin: 10px;
+
+  input {
+    padding: 6px 27px 6px 6px;
+  }
+}
+
+.input-and-recommended {
+  position: relative;
+  width: 200px;
+}
+
+.icon {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
